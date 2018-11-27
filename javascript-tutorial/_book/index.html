@@ -1,1378 +1,961 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>js基础教程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="generator" content="GitBook 3.2.3" />
+    <meta name="author" content="tutu" />
+    <meta name="identifier" content="9787121324758" scheme="ISBN" />
 
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · js基础教程</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="tutu">
-        <meta name="identifier" content="9787121324758" scheme="ISBN">
-        
-    
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="gitbook/style.css" />
 
-    
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
+    <link
+      rel="stylesheet"
+      href="gitbook/gitbook-plugin-highlight/website.css"
+    />
 
-    
+    <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css" />
 
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
+    <link
+      rel="stylesheet"
+      href="gitbook/gitbook-plugin-fontsettings/website.css"
+    />
 
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="gitbook/images/apple-touch-icon-precomposed-152.png"
+    />
+    <!-- <link
+      rel="shortcut icon"
+      href="gitbook/images/favicon.ico"
+      type="image/x-icon"
+    /> -->
+  </head>
+  <body>
+    <div class="book">
+      <div class="book-summary">
+        <div id="book-search-input" role="search">
+          <input type="text" placeholder="Type to search" />
+        </div>
 
-    
-    
+        <nav role="navigation">
+          <ul class="summary">
+            <li class="chapter active" data-level="1.1" data-path="./">
+              <a href="./"> Introduction </a>
+            </li>
 
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
+            <li class="chapter " data-level="1.2">
+              <span> 入门篇 </span>
 
-            
-                <nav role="navigation">
-                
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.2.1"
+                  data-path="docs/basic/introduction.html"
+                >
+                  <a href="docs/basic/introduction.html"> 1.导论 </a>
+                </li>
 
+                <li
+                  class="chapter "
+                  data-level="1.2.2"
+                  data-path="docs/basic/history.html"
+                >
+                  <a href="docs/basic/history.html"> 2.历史 </a>
+                </li>
 
-<ul class="summary">
-    
-    
+                <li
+                  class="chapter "
+                  data-level="1.2.3"
+                  data-path="docs/basic/grammar.html"
+                >
+                  <a href="docs/basic/grammar.html"> 3.基本语法 </a>
+                </li>
+              </ul>
+            </li>
 
-    
+            <li class="chapter " data-level="1.3">
+              <span> 数据类型 </span>
 
-    
-        
-        
-    
-        <li class="chapter active" data-level="1.1" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    Introduction
-            
-                </a>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.3.1"
+                  data-path="docs/types/general.html"
+                >
+                  <a href="docs/types/general.html"> 1.概述 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" >
-            
-                <span>
-            
-                    
-                    入门篇
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="docs/basic/introduction.html">
-            
-                <a href="docs/basic/introduction.html">
-            
-                    
-                    1.导论
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2" data-path="docs/basic/history.html">
-            
-                <a href="docs/basic/history.html">
-            
-                    
-                    2.历史
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="docs/basic/grammar.html">
-            
-                <a href="docs/basic/grammar.html">
-            
-                    
-                    3.基本语法
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" >
-            
-                <span>
-            
-                    
-                    数据类型
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="docs/types/general.html">
-            
-                <a href="docs/types/general.html">
-            
-                    
-                    1.概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="docs/types/null-undefined-boolean.html">
-            
-                <a href="docs/types/null-undefined-boolean.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.3.2"
+                  data-path="docs/types/null-undefined-boolean.html"
+                >
+                  <a href="docs/types/null-undefined-boolean.html">
                     2.null,unbefined和布尔值
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.3" data-path="docs/types/number.html">
-            
-                <a href="docs/types/number.html">
-            
-                    
-                    3.数值
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.3.3"
+                  data-path="docs/types/number.html"
+                >
+                  <a href="docs/types/number.html"> 3.数值 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.4" data-path="docs/types/string.html">
-            
-                <a href="docs/types/string.html">
-            
-                    
-                    4.字符串
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.3.4"
+                  data-path="docs/types/string.html"
+                >
+                  <a href="docs/types/string.html"> 4.字符串 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.5" data-path="docs/types/object.html">
-            
-                <a href="docs/types/object.html">
-            
-                    
-                    5.对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.3.5"
+                  data-path="docs/types/object.html"
+                >
+                  <a href="docs/types/object.html"> 5.对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.6" data-path="docs/types/function.html">
-            
-                <a href="docs/types/function.html">
-            
-                    
-                    6.函数
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.3.6"
+                  data-path="docs/types/function.html"
+                >
+                  <a href="docs/types/function.html"> 6.函数 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.7" data-path="docs/types/array.html">
-            
-                <a href="docs/types/array.html">
-            
-                    
-                    7.数组
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.3.7"
+                  data-path="docs/types/array.html"
+                >
+                  <a href="docs/types/array.html"> 7.数组 </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="chapter " data-level="1.4">
+              <span> 运算符 </span>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    运算符
-            
-                </span>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.4.1"
+                  data-path="docs/operators/arithmetic.html"
+                >
+                  <a href="docs/operators/arithmetic.html"> 1.算数运算符 </a>
+                </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="docs/operators/arithmetic.html">
-            
-                <a href="docs/operators/arithmetic.html">
-            
-                    
-                    1.算数运算符
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.4.2"
+                  data-path="docs/operators/comparison.html"
+                >
+                  <a href="docs/operators/comparison.html"> 2.比较运算符 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2" data-path="docs/operators/comparison.html">
-            
-                <a href="docs/operators/comparison.html">
-            
-                    
-                    2.比较运算符
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.4.3"
+                  data-path="docs/operators/boolean.html"
+                >
+                  <a href="docs/operators/boolean.html"> 3.布尔运算符 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.3" data-path="docs/operators/boolean.html">
-            
-                <a href="docs/operators/boolean.html">
-            
-                    
-                    3.布尔运算符
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.4.4"
+                  data-path="docs/operators/bit.html"
+                >
+                  <a href="docs/operators/bit.html"> 4.二进制运算符 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.4" data-path="docs/operators/bit.html">
-            
-                <a href="docs/operators/bit.html">
-            
-                    
-                    4.二进制运算符
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" data-path="docs/operators/priority.html">
-            
-                <a href="docs/operators/priority.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.4.5"
+                  data-path="docs/operators/priority.html"
+                >
+                  <a href="docs/operators/priority.html">
                     5.其他运算符,运算顺序
-            
-                </a>
-            
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="chapter " data-level="1.5">
+              <span> 语法专题 </span>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    语法专题
-            
-                </span>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.5.1"
+                  data-path="docs/features/style.html"
+                >
+                  <a href="docs/features/style.html"> 1.数据类型的转换 </a>
+                </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="docs/features/style.html">
-            
-                <a href="docs/features/style.html">
-            
-                    
-                    1.数据类型的转换
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.5.2"
+                  data-path="docs/features/error.html"
+                >
+                  <a href="docs/features/error.html"> 2.错误处理机制 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.2" data-path="docs/features/error.html">
-            
-                <a href="docs/features/error.html">
-            
-                    
-                    2.错误处理机制
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.5.3"
+                  data-path="docs/features/conversion.html"
+                >
+                  <a href="docs/features/conversion.html"> 3.编程风格 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="docs/features/conversion.html">
-            
-                <a href="docs/features/conversion.html">
-            
-                    
-                    3.编程风格
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="docs/features/console.html">
-            
-                <a href="docs/features/console.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.5.4"
+                  data-path="docs/features/console.html"
+                >
+                  <a href="docs/features/console.html">
                     4.console 对象与控制台
-            
-                </a>
-            
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="chapter " data-level="1.6">
+              <span> 标准库 </span>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" >
-            
-                <span>
-            
-                    
-                    标准库
-            
-                </span>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.6.1"
+                  data-path="docs/stdlib/object.html"
+                >
+                  <a href="docs/stdlib/object.html"> 1.Object 对象 </a>
+                </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1" data-path="docs/stdlib/object.html">
-            
-                <a href="docs/stdlib/object.html">
-            
-                    
-                    1.Object 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.2"
+                  data-path="docs/stdlib/attributes.html"
+                >
+                  <a href="docs/stdlib/attributes.html"> 2.属性描述对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2" data-path="docs/stdlib/attributes.html">
-            
-                <a href="docs/stdlib/attributes.html">
-            
-                    
-                    2.属性描述对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.3"
+                  data-path="docs/stdlib/array.html"
+                >
+                  <a href="docs/stdlib/array.html"> 3.Array 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.3" data-path="docs/stdlib/array.html">
-            
-                <a href="docs/stdlib/array.html">
-            
-                    
-                    3.Array 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.4"
+                  data-path="docs/stdlib/wrapper.html"
+                >
+                  <a href="docs/stdlib/wrapper.html"> 4.包装对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.4" data-path="docs/stdlib/wrapper.html">
-            
-                <a href="docs/stdlib/wrapper.html">
-            
-                    
-                    4.包装对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.5"
+                  data-path="docs/stdlib/boolean.html"
+                >
+                  <a href="docs/stdlib/boolean.html"> 5.Boolean 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.5" data-path="docs/stdlib/boolean.html">
-            
-                <a href="docs/stdlib/boolean.html">
-            
-                    
-                    5.Boolean 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.6"
+                  data-path="docs/stdlib/number.html"
+                >
+                  <a href="docs/stdlib/number.html"> 6.Number 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.6" data-path="docs/stdlib/number.html">
-            
-                <a href="docs/stdlib/number.html">
-            
-                    
-                    6.Number 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.7"
+                  data-path="docs/stdlib/string.html"
+                >
+                  <a href="docs/stdlib/string.html"> 7.String 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.7" data-path="docs/stdlib/string.html">
-            
-                <a href="docs/stdlib/string.html">
-            
-                    
-                    7.String 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.8"
+                  data-path="docs/stdlib/math.html"
+                >
+                  <a href="docs/stdlib/math.html"> 8.Math 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.8" data-path="docs/stdlib/math.html">
-            
-                <a href="docs/stdlib/math.html">
-            
-                    
-                    8.Math 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.9"
+                  data-path="docs/stdlib/date.html"
+                >
+                  <a href="docs/stdlib/date.html"> 9.Date 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.9" data-path="docs/stdlib/date.html">
-            
-                <a href="docs/stdlib/date.html">
-            
-                    
-                    9.Date 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.10"
+                  data-path="docs/stdlib/regexp.html"
+                >
+                  <a href="docs/stdlib/regexp.html"> 10.RegExp对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.10" data-path="docs/stdlib/regexp.html">
-            
-                <a href="docs/stdlib/regexp.html">
-            
-                    
-                    10.RegExp对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.6.11"
+                  data-path="docs/stdlib/json.html"
+                >
+                  <a href="docs/stdlib/json.html"> 11.JSON 对象 </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.11" data-path="docs/stdlib/json.html">
-            
-                <a href="docs/stdlib/json.html">
-            
-                    
-                    11.JSON 对象
-            
-                </a>
-            
+            <li class="chapter " data-level="1.7">
+              <span> 面向对象编程 </span>
 
-            
-        </li>
-    
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.7.1"
+                  data-path="docs/oop/new.html"
+                >
+                  <a href="docs/oop/new.html"> 1.实例对象与 new 命令 </a>
+                </li>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" >
-            
-                <span>
-            
-                    
-                    面向对象编程
-            
-                </span>
-            
+                <li
+                  class="chapter "
+                  data-level="1.7.2"
+                  data-path="docs/oop/this.html"
+                >
+                  <a href="docs/oop/this.html"> 2.this 关键字 </a>
+                </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.7.1" data-path="docs/oop/new.html">
-            
-                <a href="docs/oop/new.html">
-            
-                    
-                    1.实例对象与 new 命令
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.7.3"
+                  data-path="docs/oop/prototype.html"
+                >
+                  <a href="docs/oop/prototype.html"> 3.对象的继承 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.2" data-path="docs/oop/this.html">
-            
-                <a href="docs/oop/this.html">
-            
-                    
-                    2.this 关键字
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.7.4"
+                  data-path="docs/oop/object.html"
+                >
+                  <a href="docs/oop/object.html"> 4.Object 对象的相关方法 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.3" data-path="docs/oop/prototype.html">
-            
-                <a href="docs/oop/prototype.html">
-            
-                    
-                    3.对象的继承
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.7.5"
+                  data-path="docs/oop/strict.html"
+                >
+                  <a href="docs/oop/strict.html"> 5.严格模式 </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.4" data-path="docs/oop/object.html">
-            
-                <a href="docs/oop/object.html">
-            
-                    
-                    4.Object 对象的相关方法
-            
-                </a>
-            
+            <li class="chapter " data-level="1.8">
+              <span> 异步操作 </span>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.5" data-path="docs/oop/strict.html">
-            
-                <a href="docs/oop/strict.html">
-            
-                    
-                    5.严格模式
-            
-                </a>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.8.1"
+                  data-path="docs/async/general.html"
+                >
+                  <a href="docs/async/general.html"> 1.异步操作概述 </a>
+                </li>
 
-            
-        </li>
-    
+                <li
+                  class="chapter "
+                  data-level="1.8.2"
+                  data-path="docs/async/timer.html"
+                >
+                  <a href="docs/async/timer.html"> 2.定时器 </a>
+                </li>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" >
-            
-                <span>
-            
-                    
-                    异步操作
-            
-                </span>
-            
+                <li
+                  class="chapter "
+                  data-level="1.8.3"
+                  data-path="docs/async/promise.html"
+                >
+                  <a href="docs/async/promise.html"> 3.Promise对象 </a>
+                </li>
+              </ul>
+            </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.8.1" data-path="docs/async/general.html">
-            
-                <a href="docs/async/general.html">
-            
-                    
-                    1.异步操作概述
-            
-                </a>
-            
+            <li class="chapter " data-level="1.9">
+              <span> DOM </span>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.2" data-path="docs/async/timer.html">
-            
-                <a href="docs/async/timer.html">
-            
-                    
-                    2.定时器
-            
-                </a>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.9.1"
+                  data-path="docs/dom/general.html"
+                >
+                  <a href="docs/dom/general.html"> 1.DOM 概述 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8.3" data-path="docs/async/promise.html">
-            
-                <a href="docs/async/promise.html">
-            
-                    
-                    3.Promise对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.9.2"
+                  data-path="docs/dom/node.html"
+                >
+                  <a href="docs/dom/node.html"> 2.Node 接口 </a>
+                </li>
 
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" >
-            
-                <span>
-            
-                    
-                    DOM
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.1" data-path="docs/dom/general.html">
-            
-                <a href="docs/dom/general.html">
-            
-                    
-                    1.DOM 概述
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="docs/dom/node.html">
-            
-                <a href="docs/dom/node.html">
-            
-                    
-                    2.Node 接口
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3" data-path="docs/dom/nodelist.html">
-            
-                <a href="docs/dom/nodelist.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.9.3"
+                  data-path="docs/dom/nodelist.html"
+                >
+                  <a href="docs/dom/nodelist.html">
                     3.NodeList 接口，HTMLCollection 接口
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="docs/dom/parentnode.html">
-            
-                <a href="docs/dom/parentnode.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.9.4"
+                  data-path="docs/dom/parentnode.html"
+                >
+                  <a href="docs/dom/parentnode.html">
                     4.ParentNode 接口，ChildNode 接口
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.5" data-path="docs/dom/document.html">
-            
-                <a href="docs/dom/document.html">
-            
-                    
-                    5.Document 节点
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.9.5"
+                  data-path="docs/dom/document.html"
+                >
+                  <a href="docs/dom/document.html"> 5.Document 节点 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="docs/dom/element.html">
-            
-                <a href="docs/dom/element.html">
-            
-                    
-                    6.Element 节点
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.9.6"
+                  data-path="docs/dom/element.html"
+                >
+                  <a href="docs/dom/element.html"> 6.Element 节点 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.7" data-path="docs/dom/attributes.html">
-            
-                <a href="docs/dom/attributes.html">
-            
-                    
-                    7.属性的操作
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.9.7"
+                  data-path="docs/dom/attributes.html"
+                >
+                  <a href="docs/dom/attributes.html"> 7.属性的操作 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.8" data-path="docs/dom/text.html">
-            
-                <a href="docs/dom/text.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.9.8"
+                  data-path="docs/dom/text.html"
+                >
+                  <a href="docs/dom/text.html">
                     8.Text 节点和 DocumentFragment 节点
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.9" data-path="docs/dom/css.html">
-            
-                <a href="docs/dom/css.html">
-            
-                    
-                    9.CSS操作
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.9.9"
+                  data-path="docs/dom/css.html"
+                >
+                  <a href="docs/dom/css.html"> 9.CSS操作 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.10" data-path="docs/dom/mutationobserver.html">
-            
-                <a href="docs/dom/mutationobserver.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.9.10"
+                  data-path="docs/dom/mutationobserver.html"
+                >
+                  <a href="docs/dom/mutationobserver.html">
                     9.Mutation Observer API
-            
-                </a>
-            
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="chapter " data-level="1.10">
+              <span> 事件 </span>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" >
-            
-                <span>
-            
-                    
-                    事件
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.10.1" data-path="docs/events/eventTarget.html">
-            
-                <a href="docs/events/eventTarget.html">
-            
-                    
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.10.1"
+                  data-path="docs/events/eventTarget.html"
+                >
+                  <a href="docs/events/eventTarget.html">
                     1.EventTarget 接口
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.2" data-path="docs/events/model.html">
-            
-                <a href="docs/events/model.html">
-            
-                    
-                    2.事件模型
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.2"
+                  data-path="docs/events/model.html"
+                >
+                  <a href="docs/events/model.html"> 2.事件模型 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.3" data-path="docs/events/event.html">
-            
-                <a href="docs/events/event.html">
-            
-                    
-                    3.Event
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.3"
+                  data-path="docs/events/event.html"
+                >
+                  <a href="docs/events/event.html"> 3.Event </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.4" data-path="docs/events/mouse.html">
-            
-                <a href="docs/events/mouse.html">
-            
-                    
-                    4.鼠标事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.4"
+                  data-path="docs/events/mouse.html"
+                >
+                  <a href="docs/events/mouse.html"> 4.鼠标事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.5" data-path="docs/events/keyboard.html">
-            
-                <a href="docs/events/keyboard.html">
-            
-                    
-                    5.键盘事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.5"
+                  data-path="docs/events/keyboard.html"
+                >
+                  <a href="docs/events/keyboard.html"> 5.键盘事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.6" data-path="docs/events/progress.html">
-            
-                <a href="docs/events/progress.html">
-            
-                    
-                    6.进度事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.6"
+                  data-path="docs/events/progress.html"
+                >
+                  <a href="docs/events/progress.html"> 6.进度事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.7" data-path="docs/events/form.html">
-            
-                <a href="docs/events/form.html">
-            
-                    
-                    7.表单事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.7"
+                  data-path="docs/events/form.html"
+                >
+                  <a href="docs/events/form.html"> 7.表单事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.8" data-path="docs/events/touch.html">
-            
-                <a href="docs/events/touch.html">
-            
-                    
-                    8.触摸事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.8"
+                  data-path="docs/events/touch.html"
+                >
+                  <a href="docs/events/touch.html"> 8.触摸事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.9" data-path="docs/events/drag.html">
-            
-                <a href="docs/events/drag.html">
-            
-                    
-                    9.拽拉事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.9"
+                  data-path="docs/events/drag.html"
+                >
+                  <a href="docs/events/drag.html"> 9.拽拉事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.10" data-path="docs/events/common.html">
-            
-                <a href="docs/events/common.html">
-            
-                    
-                    10.其他常见事件
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.10.10"
+                  data-path="docs/events/common.html"
+                >
+                  <a href="docs/events/common.html"> 10.其他常见事件 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.11" data-path="docs/events/globaleventhandlers.html">
-            
-                <a href="docs/events/globaleventhandlers.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.10.11"
+                  data-path="docs/events/globaleventhandlers.html"
+                >
+                  <a href="docs/events/globaleventhandlers.html">
                     11.GlobalEventHandlers 接口
-            
-                </a>
-            
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="chapter " data-level="1.11">
+              <span> 浏览器模型 </span>
 
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11" >
-            
-                <span>
-            
-                    
-                    浏览器模型
-            
-                </span>
-            
+              <ul class="articles">
+                <li
+                  class="chapter "
+                  data-level="1.11.1"
+                  data-path="docs/bom/engine.html"
+                >
+                  <a href="docs/bom/engine.html"> 1.浏览器模型概述 </a>
+                </li>
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.11.1" data-path="docs/bom/engine.html">
-            
-                <a href="docs/bom/engine.html">
-            
-                    
-                    1.浏览器模型概述
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.2"
+                  data-path="docs/bom/window.html"
+                >
+                  <a href="docs/bom/window.html"> 2.window对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.2" data-path="docs/bom/window.html">
-            
-                <a href="docs/bom/window.html">
-            
-                    
-                    2.window对象
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.3" data-path="docs/bom/navigator.html">
-            
-                <a href="docs/bom/navigator.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.11.3"
+                  data-path="docs/bom/navigator.html"
+                >
+                  <a href="docs/bom/navigator.html">
                     3.Navigator 对象,Screen 对象
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.4" data-path="docs/bom/cookie.html">
-            
-                <a href="docs/bom/cookie.html">
-            
-                    
-                    4.Cookie
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.4"
+                  data-path="docs/bom/cookie.html"
+                >
+                  <a href="docs/bom/cookie.html"> 4.Cookie </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.5" data-path="docs/bom/xmlhttprequest.html">
-            
-                <a href="docs/bom/xmlhttprequest.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.11.5"
+                  data-path="docs/bom/xmlhttprequest.html"
+                >
+                  <a href="docs/bom/xmlhttprequest.html">
                     5.XMLHttpRequest 对象
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.6" data-path="docs/bom/same-origin.html">
-            
-                <a href="docs/bom/same-origin.html">
-            
-                    
-                    6.同源限制
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.6"
+                  data-path="docs/bom/same-origin.html"
+                >
+                  <a href="docs/bom/same-origin.html"> 6.同源限制 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.7" data-path="docs/bom/cors.html">
-            
-                <a href="docs/bom/cors.html">
-            
-                    
-                    7.Cors
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.7"
+                  data-path="docs/bom/cors.html"
+                >
+                  <a href="docs/bom/cors.html"> 7.Cors </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.8" data-path="docs/bom/storage.html">
-            
-                <a href="docs/bom/storage.html">
-            
-                    
-                    8.Storage 接口
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.8"
+                  data-path="docs/bom/storage.html"
+                >
+                  <a href="docs/bom/storage.html"> 8.Storage 接口 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.9" data-path="docs/bom/history.html">
-            
-                <a href="docs/bom/history.html">
-            
-                    
-                    9.History 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.9"
+                  data-path="docs/bom/history.html"
+                >
+                  <a href="docs/bom/history.html"> 9.History 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.10" data-path="docs/bom/location.html">
-            
-                <a href="docs/bom/location.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.11.10"
+                  data-path="docs/bom/location.html"
+                >
+                  <a href="docs/bom/location.html">
                     10.Location 对象，URL 对象，URLSearchParams 对象
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.11" data-path="docs/bom/arraybuffer.html">
-            
-                <a href="docs/bom/arraybuffer.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.11.11"
+                  data-path="docs/bom/arraybuffer.html"
+                >
+                  <a href="docs/bom/arraybuffer.html">
                     11.ArrayBuffer 对象，Blob 对象
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.12" data-path="docs/bom/file.html">
-            
-                <a href="docs/bom/file.html">
-            
-                    
+                <li
+                  class="chapter "
+                  data-level="1.11.12"
+                  data-path="docs/bom/file.html"
+                >
+                  <a href="docs/bom/file.html">
                     12.File 对象，FileList 对象，FileReader 对象
-            
-                </a>
-            
+                  </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.13" data-path="docs/bom/form.html">
-            
-                <a href="docs/bom/form.html">
-            
-                    
-                    13.表单，FormData 对象
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.13"
+                  data-path="docs/bom/form.html"
+                >
+                  <a href="docs/bom/form.html"> 13.表单，FormData 对象 </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.14" data-path="docs/bom/indexeddb.html">
-            
-                <a href="docs/bom/indexeddb.html">
-            
-                    
-                    14.IndexedDB API
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.14"
+                  data-path="docs/bom/indexeddb.html"
+                >
+                  <a href="docs/bom/indexeddb.html"> 14.IndexedDB API </a>
+                </li>
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.11.15" data-path="docs/bom/webworker.html">
-            
-                <a href="docs/bom/webworker.html">
-            
-                    
-                    15.Web Worker
-            
-                </a>
-            
+                <li
+                  class="chapter "
+                  data-level="1.11.15"
+                  data-path="docs/bom/webworker.html"
+                >
+                  <a href="docs/bom/webworker.html"> 15.Web Worker </a>
+                </li>
+              </ul>
+            </li>
 
-            
-        </li>
-    
+            <li class="divider"></li>
 
-            </ul>
-            
-        </li>
-    
+            <li>
+              <a
+                href="https://www.gitbook.com"
+                target="blank"
+                class="gitbook-link"
+              >
+                Published with GitBook
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    
+      <div class="book-body">
+        <div class="body-inner">
+          <div class="book-header" role="navigation">
+            <!-- Title -->
+            <h1>
+              <i class="fa fa-circle-o-notch fa-spin"></i>
+              <a href=".">Introduction</a>
+            </h1>
+          </div>
 
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <ul>
-<li><p>&#x4ECB;&#x7ECD;
-  &#x6211;&#x5199;&#x8FD9;&#x672C;&#x6559;&#x7A0B;&#xFF0C;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x3002;</p>
-<p>  &#x7F16;&#x7A0B;&#x65F6;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x67E5;&#x9605;&#x8D44;&#x6599;&#xFF0C;&#x786E;&#x5B9A;&#x51C6;&#x786E;&#x7528;&#x6CD5;&#x3002;&#x7406;&#x60F3;&#x7684; JavaScript &#x53C2;&#x8003;&#x4E66;&#xFF0C;&#x5E94;&#x8BE5;&#x7B80;&#x660E;&#x6613;&#x61C2;&#xFF0C;&#x4E00;&#x76EE;&#x4E86;&#x7136;&#xFF0C;&#x544A;&#x8BC9;&#x6211;&#x6709;&#x54EA;&#x4E9B;&#x6CE8;&#x610F;&#x70B9;&#xFF0C;&#x63D0;&#x4F9B;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#xFF0C;&#x8FD8;&#x5E94;&#x8BE5;&#x9002;&#x5F53;&#x8BB2;&#x89E3;&#x3002;&#x53EF;&#x662F;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x73B0;&#x5B9E;&#x90FD;&#x4E0D;&#x662F;&#x5982;&#x6B64;&#x3002;&#x627E;&#x5230;&#x7684;&#x8D44;&#x6599;&#x5197;&#x957F;&#x96BE;&#x61C2;&#xFF0C;&#x6293;&#x4E0D;&#x4F4F;&#x91CD;&#x70B9;&#xFF0C;&#x6709;&#x65F6;&#x8FD8;&#x5F88;&#x9648;&#x65E7;&#xFF0C;&#x8DDF;&#x4E0D;&#x4E0A;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#x548C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5FEB;&#x901F;&#x53D1;&#x5C55;&#xFF0C;&#x4E14;&#x5927;&#x591A;&#x6570;&#x662F;&#x82F1;&#x6587;&#x8D44;&#x6599;&#x3002;</p>
-<p>  &#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x505A;&#x4E86;&#x5F88;&#x591A; JavaScript &#x7B14;&#x8BB0;&#x3002;&#x591A;&#x5E74;&#x7D2F;&#x79EF;&#xFF0C;&#x6570;&#x91CF;&#x76F8;&#x5F53;&#x5E9E;&#x5927;&#x3002;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x9996;&#x5148;&#x67E5;&#x81EA;&#x5DF1;&#x7684;&#x7B14;&#x8BB0;&#xFF0C;&#x5982;&#x679C;&#x7B14;&#x8BB0;&#x91CC;&#x6CA1;&#x6709;&#xFF0C;&#x518D;&#x5230;&#x7F51;&#x4E0A;&#x67E5;&#xFF0C;&#x6700;&#x540E;&#x56DE;&#x8FC7;&#x5934;&#x628A;&#x7B14;&#x8BB0;&#x8865;&#x5168;&#x3002;&#x7EC8;&#x4E8E;&#x6709;&#x4E00;&#x5929;&#xFF0C;&#x6211;&#x610F;&#x8BC6;&#x5230;&#x53EF;&#x4EE5;&#x628A;&#x7B14;&#x8BB0;&#x505A;&#x6210;&#x4E66;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x8FD9;&#x672C;&#x4E66;&#x7684;&#x7531;&#x6765;&#x3002;</p>
-<p>  &#x6B63;&#x56E0;&#x4E3A;&#x8131;&#x80CE;&#x4E8E;&#x7B14;&#x8BB0;&#xFF0C;&#x8FD9;&#x672C;&#x6559;&#x7A0B;&#x8DDF;&#x5176;&#x4ED6; JavaScript &#x4E66;&#x7C4D;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x4F5C;&#x4E3A;&#x6559;&#x7A0B;&#xFF0C;&#x672C;&#x4E66;&#x5BF9;&#x6240;&#x6709;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#x90FD;&#x8FDB;&#x884C;&#x4E86;&#x8BB2;&#x89E3;&#xFF0C;&#x52AA;&#x529B;&#x628A;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#x8BB2;&#x5F97;&#x7B80;&#x5355;&#xFF0C;&#x5E0C;&#x671B;&#x4E00;&#x4E24;&#x5206;&#x949F;&#x5185;&#x5C31;&#x80FD;&#x6293;&#x4F4F;&#x91CD;&#x70B9;&#x3002;&#x672C;&#x4E66;&#x8FD8;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53C2;&#x8003;&#x624B;&#x518C;&#xFF0C;&#x7F57;&#x5217;&#x4E86;&#x4E3B;&#x8981;&#x7528;&#x6CD5;&#x548C;&#x5404;&#x79CD; API &#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x7ED9;&#x51FA;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x6240;&#x6709;&#x7AE0;&#x8282;&#x6309;&#x7167;&#x8BED;&#x8A00;&#x7684; API &#x7F16;&#x6392;&#xFF0C;&#x65B9;&#x4FBF;&#x4EE5;&#x540E;&#x7684;&#x67E5;&#x9605;&#x3002;</p>
-<p>  &#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x67D0;&#x5904;&#x51FA;&#x73B0;&#x964C;&#x751F;&#x7684;&#x65B0;&#x6982;&#x5FF5;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x9605;&#x8BFB;&#x4E0B;&#x53BB;&#x3002;&#x4EE5;&#x540E;&#x67E5;&#x9605;&#x8FD9;&#x4E9B;&#x7AE0;&#x8282;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5F88;&#x65B9;&#x4FBF;&#x627E;&#x5230;&#x67D0;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x76F8;&#x5173;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;</p>
-</li>
-</ul>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
+          <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+              <div id="book-search-results">
+                <div class="search-noresults">
+                  <section class="normal markdown-section">
+                    <ul>
+                      <li>
+                        <p>
+                          &#x4ECB;&#x7ECD;
+                          &#x6211;&#x5199;&#x8FD9;&#x672C;&#x6559;&#x7A0B;&#xFF0C;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x3002;
+                        </p>
+                        <p>
+                          &#x7F16;&#x7A0B;&#x65F6;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x67E5;&#x9605;&#x8D44;&#x6599;&#xFF0C;&#x786E;&#x5B9A;&#x51C6;&#x786E;&#x7528;&#x6CD5;&#x3002;&#x7406;&#x60F3;&#x7684;
+                          JavaScript
+                          &#x53C2;&#x8003;&#x4E66;&#xFF0C;&#x5E94;&#x8BE5;&#x7B80;&#x660E;&#x6613;&#x61C2;&#xFF0C;&#x4E00;&#x76EE;&#x4E86;&#x7136;&#xFF0C;&#x544A;&#x8BC9;&#x6211;&#x6709;&#x54EA;&#x4E9B;&#x6CE8;&#x610F;&#x70B9;&#xFF0C;&#x63D0;&#x4F9B;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#xFF0C;&#x8FD8;&#x5E94;&#x8BE5;&#x9002;&#x5F53;&#x8BB2;&#x89E3;&#x3002;&#x53EF;&#x662F;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x73B0;&#x5B9E;&#x90FD;&#x4E0D;&#x662F;&#x5982;&#x6B64;&#x3002;&#x627E;&#x5230;&#x7684;&#x8D44;&#x6599;&#x5197;&#x957F;&#x96BE;&#x61C2;&#xFF0C;&#x6293;&#x4E0D;&#x4F4F;&#x91CD;&#x70B9;&#xFF0C;&#x6709;&#x65F6;&#x8FD8;&#x5F88;&#x9648;&#x65E7;&#xFF0C;&#x8DDF;&#x4E0D;&#x4E0A;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#x548C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5FEB;&#x901F;&#x53D1;&#x5C55;&#xFF0C;&#x4E14;&#x5927;&#x591A;&#x6570;&#x662F;&#x82F1;&#x6587;&#x8D44;&#x6599;&#x3002;
+                        </p>
+                        <p>
+                          &#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x505A;&#x4E86;&#x5F88;&#x591A;
+                          JavaScript
+                          &#x7B14;&#x8BB0;&#x3002;&#x591A;&#x5E74;&#x7D2F;&#x79EF;&#xFF0C;&#x6570;&#x91CF;&#x76F8;&#x5F53;&#x5E9E;&#x5927;&#x3002;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x9996;&#x5148;&#x67E5;&#x81EA;&#x5DF1;&#x7684;&#x7B14;&#x8BB0;&#xFF0C;&#x5982;&#x679C;&#x7B14;&#x8BB0;&#x91CC;&#x6CA1;&#x6709;&#xFF0C;&#x518D;&#x5230;&#x7F51;&#x4E0A;&#x67E5;&#xFF0C;&#x6700;&#x540E;&#x56DE;&#x8FC7;&#x5934;&#x628A;&#x7B14;&#x8BB0;&#x8865;&#x5168;&#x3002;&#x7EC8;&#x4E8E;&#x6709;&#x4E00;&#x5929;&#xFF0C;&#x6211;&#x610F;&#x8BC6;&#x5230;&#x53EF;&#x4EE5;&#x628A;&#x7B14;&#x8BB0;&#x505A;&#x6210;&#x4E66;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x8FD9;&#x672C;&#x4E66;&#x7684;&#x7531;&#x6765;&#x3002;
+                        </p>
+                        <p>
+                          &#x6B63;&#x56E0;&#x4E3A;&#x8131;&#x80CE;&#x4E8E;&#x7B14;&#x8BB0;&#xFF0C;&#x8FD9;&#x672C;&#x6559;&#x7A0B;&#x8DDF;&#x5176;&#x4ED6;
+                          JavaScript
+                          &#x4E66;&#x7C4D;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x4F5C;&#x4E3A;&#x6559;&#x7A0B;&#xFF0C;&#x672C;&#x4E66;&#x5BF9;&#x6240;&#x6709;&#x91CD;&#x8981;&#x6982;&#x5FF5;&#x90FD;&#x8FDB;&#x884C;&#x4E86;&#x8BB2;&#x89E3;&#xFF0C;&#x52AA;&#x529B;&#x628A;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#x8BB2;&#x5F97;&#x7B80;&#x5355;&#xFF0C;&#x5E0C;&#x671B;&#x4E00;&#x4E24;&#x5206;&#x949F;&#x5185;&#x5C31;&#x80FD;&#x6293;&#x4F4F;&#x91CD;&#x70B9;&#x3002;&#x672C;&#x4E66;&#x8FD8;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53C2;&#x8003;&#x624B;&#x518C;&#xFF0C;&#x7F57;&#x5217;&#x4E86;&#x4E3B;&#x8981;&#x7528;&#x6CD5;&#x548C;&#x5404;&#x79CD;
+                          API
+                          &#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x7ED9;&#x51FA;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x6240;&#x6709;&#x7AE0;&#x8282;&#x6309;&#x7167;&#x8BED;&#x8A00;&#x7684;
+                          API
+                          &#x7F16;&#x6392;&#xFF0C;&#x65B9;&#x4FBF;&#x4EE5;&#x540E;&#x7684;&#x67E5;&#x9605;&#x3002;
+                        </p>
+                        <p>
+                          &#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x67D0;&#x5904;&#x51FA;&#x73B0;&#x964C;&#x751F;&#x7684;&#x65B0;&#x6982;&#x5FF5;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x9605;&#x8BFB;&#x4E0B;&#x53BB;&#x3002;&#x4EE5;&#x540E;&#x67E5;&#x9605;&#x8FD9;&#x4E9B;&#x7AE0;&#x8282;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5F88;&#x65B9;&#x4FBF;&#x627E;&#x5230;&#x67D0;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x76F8;&#x5173;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;
+                        </p>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="search-results">
+                  <div class="has-results">
+                    <h1 class="search-results-title">
+                      <span class="search-results-count"></span> results
+                      matching "<span class="search-query"></span>"
+                    </h1>
+                    <ul class="search-results-list"></ul>
+                  </div>
+                  <div class="no-results">
+                    <h1 class="search-results-title">
+                      No results matching "<span class="search-query"></span>"
+                    </h1>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            
-                
-                
-            
-        
-    </div>
-
-    <script>
+      <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"入门篇","level":"1.2","depth":1,"ref":"","articles":[{"title":"1.导论","level":"1.2.1","depth":2,"path":"docs/basic/introduction.md","ref":"docs/basic/introduction.md","articles":[]},{"title":"2.历史","level":"1.2.2","depth":2,"path":"docs/basic/history.md","ref":"docs/basic/history.md","articles":[]},{"title":"3.基本语法","level":"1.2.3","depth":2,"path":"docs/basic/grammar.md","ref":"docs/basic/grammar.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"tutu","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"9787121324758","variables":{},"title":"js基础教程","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null}},"gitbook":"*","description":"js基础 ","extension":null},"file":{"path":"README.md","mtime":"2018-11-27T02:04:55.398Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-27T02:11:19.100Z"},"basePath":".","book":{"language":""}});
+          gitbook.page.hasChanged({
+            page: {
+              title: "Introduction",
+              level: "1.1",
+              depth: 1,
+              next: {
+                title: "入门篇",
+                level: "1.2",
+                depth: 1,
+                ref: "",
+                articles: [
+                  {
+                    title: "1.导论",
+                    level: "1.2.1",
+                    depth: 2,
+                    path: "docs/basic/introduction.md",
+                    ref: "docs/basic/introduction.md",
+                    articles: []
+                  },
+                  {
+                    title: "2.历史",
+                    level: "1.2.2",
+                    depth: 2,
+                    path: "docs/basic/history.md",
+                    ref: "docs/basic/history.md",
+                    articles: []
+                  },
+                  {
+                    title: "3.基本语法",
+                    level: "1.2.3",
+                    depth: 2,
+                    path: "docs/basic/grammar.md",
+                    ref: "docs/basic/grammar.md",
+                    articles: []
+                  }
+                ]
+              },
+              dir: "ltr"
+            },
+            config: {
+              plugins: [],
+              styles: {
+                website: "styles/website.css",
+                pdf: "styles/pdf.css",
+                epub: "styles/epub.css",
+                mobi: "styles/mobi.css",
+                ebook: "styles/ebook.css",
+                print: "styles/print.css"
+              },
+              pluginsConfig: {
+                highlight: {},
+                search: {},
+                lunr: { maxIndexSize: 1000000, ignoreSpecialCharacters: false },
+                sharing: {
+                  facebook: true,
+                  twitter: true,
+                  google: false,
+                  weibo: false,
+                  instapaper: false,
+                  vk: false,
+                  all: ["facebook", "google", "twitter", "weibo", "instapaper"]
+                },
+                fontsettings: { theme: "white", family: "sans", size: 2 },
+                "theme-default": {
+                  styles: {
+                    website: "styles/website.css",
+                    pdf: "styles/pdf.css",
+                    epub: "styles/epub.css",
+                    mobi: "styles/mobi.css",
+                    ebook: "styles/ebook.css",
+                    print: "styles/print.css"
+                  },
+                  showLevel: false
+                }
+              },
+              theme: "default",
+              author: "tutu",
+              pdf: {
+                pageBreaksBefore: "/",
+                headerTemplate: null,
+                paperSize: "a4",
+                margin: { right: 62, left: 62, top: 36, bottom: 36 },
+                fontSize: 12,
+                fontFamily: "Arial",
+                footerTemplate: null,
+                chapterMark: "pagebreak",
+                pageNumbers: false
+              },
+              structure: {
+                langs: "LANGS.md",
+                readme: "README.md",
+                glossary: "GLOSSARY.md",
+                summary: "SUMMARY.md"
+              },
+              isbn: "9787121324758",
+              variables: {},
+              title: "js基础教程",
+              links: {
+                sharing: {
+                  all: null,
+                  facebook: null,
+                  google: null,
+                  twitter: null,
+                  weibo: null
+                }
+              },
+              gitbook: "*",
+              description: "js基础 ",
+              extension: null
+            },
+            file: {
+              path: "README.md",
+              mtime: "2018-11-27T02:04:55.398Z",
+              type: "markdown"
+            },
+            gitbook: { version: "3.2.3", time: "2018-11-27T02:11:19.100Z" },
+            basePath: ".",
+            book: { language: "" }
+          });
         });
-    </script>
-</div>
+      </script>
+    </div>
 
-        
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
 
-    </body>
+    <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+
+    <script src="gitbook/gitbook-plugin-search/search.js"></script>
+
+    <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+
+    <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+
+    <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+    <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+  </body>
 </html>
-
