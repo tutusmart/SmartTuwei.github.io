@@ -1,9 +1,9 @@
 # Summary
-* 入门篇
+* **1.入门篇**
     * [1.导论](docs/basic/introduction.md)
     * [2.历史](docs/basic/history.md)
     * [3.基本语法](docs/basic/grammar.md)
-* 数据类型
+* **2.数据类型**
     * [1.概述](docs/types/general.md)
     * [2.null,unbefined和布尔值](docs/types/null-undefined-boolean.md)
     * [3.数值](docs/types/number.md)
@@ -11,18 +11,18 @@
     * [5.对象](docs/types/object.md)
     * [6.函数](docs/types/function.md)
     * [7.数组](docs/types/array.md)
-* 运算符
+* **3.运算符**
     * [1.算数运算符](docs/operators/arithmetic.md)
     * [2.比较运算符](docs/operators/comparison.md)
     * [3.布尔运算符](docs/operators/boolean.md)
     * [4.二进制运算符](docs/operators/bit.md)
     * [5.其他运算符,运算顺序](docs/operators/priority.md)
-* 语法专题
+* **4.语法专题**
     * [1.数据类型的转换](docs/features/style.md)
     * [2.错误处理机制](docs/features/error.md)
     * [3.编程风格](docs/features/conversion.md)
     * [4.console 对象与控制台](docs/features/console.md)
-* 标准库
+* **5.标准库**
     * [1.Object 对象](docs/stdlib/object.md)
     * [2.属性描述对象](docs/stdlib/attributes.md)
     * [3.Array 对象](docs/stdlib/array.md)
@@ -34,17 +34,17 @@
     * [9.Date 对象](docs/stdlib/date.md)
     * [10.RegExp对象](docs/stdlib/regexp.md)
     * [11.JSON 对象](docs/stdlib/json.md)
-* 面向对象编程
+* **6.面向对象编程**
     * [1.实例对象与 new 命令](docs/oop/new.md)
     * [2.this 关键字](docs/oop/this.md)
     * [3.对象的继承](docs/oop/prototype.md)
     * [4.Object 对象的相关方法](docs/oop/object.md)
     * [5.严格模式](docs/oop/strict.md)
-* 异步操作
+* **7.异步操作**
     * [1.异步操作概述](docs/async/general.md)
     * [2.定时器](docs/async/timer.md)
     * [3.Promise对象](docs/async/promise.md)
-* DOM
+* **8.DOM**
     * [1.DOM 概述](docs/dom/general.md)
     * [2.Node 接口](docs/dom/node.md) 
     * [3.NodeList 接口，HTMLCollection 接口](docs/dom/nodelist.md)
@@ -55,7 +55,7 @@
     * [8.Text 节点和 DocumentFragment 节点](docs/dom/text.md)
     * [9.CSS操作](docs/dom/css.md)
     * [9.Mutation Observer API](docs/dom/mutationobserver.md)
-* 事件
+* **9.事件**
     * [1.EventTarget 接口](docs/events/eventTarget.md)
     * [2.事件模型](docs/events/model.md)
     * [3.Event](docs/events/event.md)
@@ -67,7 +67,7 @@
     * [9.拽拉事件](docs/events/drag.md)
     * [10.其他常见事件](docs/events/common.md)
     * [11.GlobalEventHandlers 接口](docs/events/globaleventhandlers.md)
-* 浏览器模型
+* **10.浏览器模型**
     * [1.浏览器模型概述](docs/bom/engine.md)
     * [2.window对象](docs/bom/window.md)
     * [3.Navigator 对象,Screen 对象](docs/bom/navigator.md)
