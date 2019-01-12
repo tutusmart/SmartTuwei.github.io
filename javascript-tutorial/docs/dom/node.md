@@ -145,8 +145,8 @@ d === document // true
 ```javascript
 // HTML 代码如下
 // <div id="d1">hello</div><div id="d2">world</div>
-var div1 = document.getElementById('d1');
-var div2 = document.getElementById('d2');
+var d1 = document.getElementById('d1');
+var d2 = document.getElementById('d2');
 
 d1.nextSibling === d2 // true
 ```
@@ -475,7 +475,7 @@ nodeA.contains(nodeA) // true
 
 ### Node.prototype.compareDocumentPosition()
 
-`compareDocumentPosition`方法的用法，与`contains`方法完全一致，返回一个七个比特位的二进制值，表示参数节点与当前节点的关系。
+`compareDocumentPosition`方法的用法，与`contains`方法完全一致，返回一个六个比特位的二进制值，表示参数节点与当前节点的关系。
 
 二进制值 | 十进制值 | 含义
 ---------|------|-----
@@ -558,12 +558,19 @@ wrapper.childNodes.length // 1
 
 ### Node.prototype.getRootNode()
 
-`getRootNode`方法返回当前节点所在文档的根节点，与`ownerDocument`属性的作用相同。
+`getRootNode()`方法返回当前节点所在文档的根节点`document`，与`ownerDocument`属性的作用相同。
 
 ```javascript
 document.body.firstChild.getRootNode() === document
 // true
 document.body.firstChild.getRootNode() === document.body.firstChild.ownerDocument
 // true
+```
+
+该方法可用于`document`节点自身，这一点与`document.ownerDocument`不同。
+
+```javascript
+document.getRootNode() // document
+document.ownerDocument // null
 ```
 
