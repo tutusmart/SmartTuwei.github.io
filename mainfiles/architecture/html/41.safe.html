@@ -354,7 +354,7 @@ var str = &quot;zfpx\&quot;&quot;;
 <ul>
 <li>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x76F8;&#x4FE1;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;</li>
 <li>&#x7528;&#x6237;&#x683C;&#x5F0F;&#x5224;&#x65AD; &#x767D;&#x540D;&#x5355;</li>
-<li>&#x8FC7;&#x6EE4;&#x5371;&#x9669;&#x5B57;&#x7B26; &#x53BB;&#x9664;<script> javascript onclick等  黑名单</li>
+<li>&#x8FC7;&#x6EE4;&#x5371;&#x9669;&#x5B57;&#x7B26; &#x53BB;&#x9664;javascript onclick等 黑名单</li>
 <li>转义特殊字符 <code>&lt;=&amp;lt;  &gt;=&amp;gt; &amp;=&amp;amp;</code>  黑名单</li>
 <li>前端可以绕过</li>
 </ul>
@@ -458,7 +458,9 @@ req.end();
 <h3 id="1-8-2-js-">1.8.2 JS执行环境</h3>
 <p>使用之前要做一个javascriptEncode(). 一般用/进行转义</p>
 <ul>
-<li>script标签中 <script>let x = &quot;$var&quot;;</script></li>
+<li>script标签中 
+<code>let x = &quot;$var&quot;;</code>
+</li>
 <li>&#x4E8B;&#x4EF6;&#x5C5E;&#x6027;&#x4E2D; <a href="" onclick="join($room)">&#x52A0;&#x5165;&#x623F;&#x95F4;</a></li>
 </ul>
 <h3 id="t111.8.3 URL&#x89E3;&#x6790;&#x73AF;&#x5883;">1.8.3 URL&#x89E3;&#x6790;&#x73AF;&#x5883; <a href="#t111.8.3 URL&#x89E3;&#x6790;&#x73AF;&#x5883;"> # </a></h3>
