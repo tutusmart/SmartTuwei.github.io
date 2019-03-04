@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css" tppabs="http://www.zhufengpeixun.cn/architecture/static/css/main.css">
+</head>
+<body>
+
+
+<div class="warpper">
+
+    <div class="page-toc">
+        <ul><li><a href="#t01. 什么是Mock">1. 什么是Mock</a></li><li><a href="#t12. 如何Mock数据？">2. 如何Mock数据？</a></li><li><a href="#t23. Mock语法">3. Mock语法</a></li><li><a href="#t34. easy-mock">4. easy-mock</a></li><li><a href="#t45. 基本用法">5. 基本用法</a></li><li><a href="#t55.高阶用法">5.高阶用法</a></li><li><a href="#t66.在线调试">6.在线调试</a></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h2 id="t01. &#x4EC0;&#x4E48;&#x662F;Mock">1. &#x4EC0;&#x4E48;&#x662F;Mock <a href="#t01. &#x4EC0;&#x4E48;&#x662F;Mock"> # </a></h2>
+<ul>
+<li>&#x4EC0;&#x4E48;&#x662F;Mock?? Mock&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x771F;&#x5B9E;&#x6570;&#x636E;&#x5B58;&#x5728;&#x4E4B;&#x524D;&#xFF0C;&#x5373;&#x8C03;&#x8BD5;&#x671F;&#x95F4;&#x7684;&#x4EE3;&#x66FF;&#x54C1;</li>
+</ul>
+<h2 id="t12. &#x5982;&#x4F55;Mock&#x6570;&#x636E;&#xFF1F;">2. &#x5982;&#x4F55;Mock&#x6570;&#x636E;&#xFF1F; <a href="#t12. &#x5982;&#x4F55;Mock&#x6570;&#x636E;&#xFF1F;"> # </a></h2>
+<ul>
+<li>&#x6700;low&#x7684;&#x65B9;&#x5F0F;&#x5C06; Mock &#x6570;&#x636E;&#x5199;&#x5728;&#x4EE3;&#x7801;&#x91CC;&#x3001;json&#x6587;&#x4EF6;&#x91CC;&#xFF1B;</li>
+<li>&#x5229;&#x7528; Charles &#x3001;Fiddler&#x7B49;&#x4EE3;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x5C06; URL &#x6620;&#x5C04;&#x5230;&#x672C;&#x5730;&#x6587;&#x4EF6;&#xFF1B;</li>
+<li>&#x672C;&#x5730;&#x8D77; Mock Server&#xFF0C;&#x5373;mockjs&#xFF0C;&#x6709;&#x70B9;&#x9EBB;&#x70E6;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x4E86;&#x540E;&#x8FD8;&#x8981;&#x91CD;&#x542F;&#x670D;&#x52A1;</li>
+</ul>
+<h2 id="t23. Mock&#x8BED;&#x6CD5;">3. Mock&#x8BED;&#x6CD5; <a href="#t23. Mock&#x8BED;&#x6CD5;"> # </a></h2>
+<ul>
+<li><p><a href="javascript:if(confirm('http://mockjs.com/examples.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://mockjs.com/examples.html'" tppabs="http://mockjs.com/examples.html">mockjs</a></p>
+</li>
+<li><p>@ip -&gt; &#x968F;&#x673A;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;ip&#xFF1B;</p>
+</li>
+<li>@id -&gt; &#x968F;&#x673A;&#x8F93;&#x51FA;&#x957F;&#x5EA6;18&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4E0D;&#x63A5;&#x53D7;&#x53C2;&#x6570;&#xFF1B;</li>
+<li>&quot;array|1-10&quot; -&gt; &#x968F;&#x673A;&#x8F93;&#x51FA;1-10&#x957F;&#x5EA6;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x662F;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#xFF1B;</li>
+<li>&quot;object|2&quot; -&gt; &#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x4E24;&#x4E2A;key&#x503C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;</li>
+<li>&quot;@image()&quot; &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x56FE;url&#xFF0C;&#x652F;&#x6301;size, background, foreground, format, text</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> Mock = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mockjs&apos;</span>);
+<span class="hljs-keyword">let</span> result = Mock.mock({
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x8BF7;&#x6C42;&#x6210;&#x529F;&quot;</span>,
+    <span class="hljs-string">&quot;data|20&quot;</span>: [{
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;@cname&quot;</span>,<span class="hljs-comment">//cname &#x4E2D;&#x6587;&#xFF0C;name &#x82F1;&#x6587;</span>
+        <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;@id&quot;</span>,
+        <span class="hljs-string">&quot;createAt&quot;</span>: <span class="hljs-string">&quot;@datetime&quot;</span>
+    }]
+})
+<span class="hljs-built_in">console</span>.log(result);
+</code></pre>
+<h2 id="t34. easy-mock">4. easy-mock <a href="#t34. easy-mock"> # </a></h2>
+<ul>
+<li><a href="javascript:if(confirm('https://easy-mock.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://easy-mock.com/'" tppabs="https://easy-mock.com/">easy-mock</a></li>
+<li>Easy Mock&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5728;&#x7EBF;&#x521B;&#x5EFA;mock&#x7684;&#x670D;&#x52A1;&#x5E73;&#x53F0;&#xFF0C;&#x5E2E;&#x4F60;&#x7701;&#x53BB;&#x4F60; &#x914D;&#x7F6E;&#x3001;&#x5B89;&#x88C5;&#x3001;&#x8D77;&#x670D;&#x52A1;&#x3001;&#x7EF4;&#x62A4;&#x3001;&#x591A;&#x4EBA;&#x534F;&#x4F5C;Mock&#x6570;&#x636E;&#x4E0D;&#x4E92;&#x901A;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x7E41;&#x7410;&#x7684;&#x64CD;&#x4F5C;</li>
+</ul>
+<h2 id="t45. &#x57FA;&#x672C;&#x7528;&#x6CD5;">5. &#x57FA;&#x672C;&#x7528;&#x6CD5; <a href="#t45. &#x57FA;&#x672C;&#x7528;&#x6CD5;"> # </a></h2>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;data|5&quot;</span>: [{
+    <span class="hljs-string">&quot;id|1-1000&quot;</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;@csentence&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;@url&quot;</span>,
+    <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;@image(300x200)&quot;</span>,
+    <span class="hljs-string">&quot;createAt&quot;</span>: <span class="hljs-string">&quot;@datetime&quot;</span>
+  }],
+  <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>
+}
+</code></pre>
+<h2 id="t55.&#x9AD8;&#x9636;&#x7528;&#x6CD5;">5.&#x9AD8;&#x9636;&#x7528;&#x6CD5; <a href="#t55.&#x9AD8;&#x9636;&#x7528;&#x6CD5;"> # </a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5BF9;&#x8C61;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Mock</td>
+<td style="text-align:left">Mock &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.url</td>
+<td style="text-align:left">&#x83B7;&#x5F97;&#x8BF7;&#x6C42; url &#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.method</td>
+<td style="text-align:left">&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.params</td>
+<td style="text-align:left">&#x83B7;&#x53D6; url &#x53C2;&#x6570;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.querystring</td>
+<td style="text-align:left">&#x83B7;&#x53D6;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;(url&#x4E2D;?&#x540E;&#x9762;&#x7684;&#x90E8;&#x5206;)&#xFF0C;&#x4E0D;&#x5305;&#x542B; ?</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.query</td>
+<td style="text-align:left">&#x5C06;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#x5E76;&#x4EE5;&#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">_req.body</td>
+<td style="text-align:left">&#x5F53; post &#x8BF7;&#x6C42;&#x4EE5; x-www-form-urlencoded &#x65B9;&#x5F0F;&#x63D0;&#x4EA4;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x2026;</td>
+<td style="text-align:left">_req.cookies&#x3001;ip&#x3001;host&#x7B49;&#x7B49; <a href="javascript:if(confirm('https://easy-mock.com/docs  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://easy-mock.com/docs'" tppabs="https://easy-mock.com/docs">docs</a></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x7B80;&#x5355;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#xFF0C;&#x6839;&#x636E;&#x7528;&#x6237;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x903B;&#x8F91;&#x6570;&#x636E;</span>
+{
+  <span class="hljs-attr">name</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">{_req}</span>)</span>{
+    <span class="hljs-keyword">return</span> _req.query.name;
+  },
+  <span class="hljs-attr">code</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">{_req}</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._req.query.code ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>;
+  }
+  data: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">{_req,Mock}</span>)</span>{
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">token</span>: Mock.mock(<span class="hljs-string">&quot;@guid()&quot;</span>),
+      <span class="hljs-attr">userId</span>: Mock.mock(<span class="hljs-string">&quot;@id(5)&quot;</span>),
+      <span class="hljs-attr">cname</span>: Mock.mock(<span class="hljs-string">&quot;@cname()&quot;</span>),
+      <span class="hljs-attr">name</span>: Mock.mock(<span class="hljs-string">&quot;@name()&quot;</span>),
+      <span class="hljs-attr">avatar</span>: Mock.mock(<span class="hljs-string">&quot;@image(200x100, #FF6600)&quot;</span>)
+    }
+  }
+}
+</code></pre>
+<h2 id="t66.&#x5728;&#x7EBF;&#x8C03;&#x8BD5;">6.&#x5728;&#x7EBF;&#x8C03;&#x8BD5; <a href="#t66.&#x5728;&#x7EBF;&#x8C03;&#x8BD5;"> # </a></h2>
+<ul>
+<li><a href="javascript:if(confirm('https://easy-mock.com/mock/5a0aad39eace86040209063d/pjhApi_1510649145466/api/common/logins  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://easy-mock.com/mock/5a0aad39eace86040209063d/pjhApi_1510649145466/api/common/logins#!method=post'" tppabs="https://easy-mock.com/mock/5a0aad39eace86040209063d/pjhApi_1510649145466/api/common/logins#!method=post">&#x5728;&#x7EBF;&#x8C03;&#x8BD5;</a></li>
+</ul>
+
+        <div class="copyright">Powered by <a href="javascript:if(confirm('https://github.com/jaywcjlove/idoc  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/jaywcjlove/idoc'" tppabs="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="javascript:if(confirm('https://nodejs.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://nodejs.org/'" tppabs="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+    
+</div>
+
+<script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js" tppabs="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+  // if (!$('.understand-me').length) {
+  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+  //   var count = bar / 26 / 2;
+  //   var barHeight = $('.page-toc').outerHeight();
+  //   $('.page-toc li').eq(0).children('a').addClass('red');
+  //   var arr = [];
+  //   $("h1,h2,h3,h4,h5,h6").each(function () {
+  //     arr.push($(this).position().top);
+  //   });
+  //   var timer
+  //   function dark() {
+  //     clearTimeout(timer)
+  //      timer = setTimeout(function () {
+  //      var top = Math.abs($('.page-toc > ul').position().top);
+  //      var cur = $('.content').scrollTop();
+  //      for (var i = arr.length; i >= 0; i--) {
+  //        if (arr[i] <= cur) {
+  //          break;
+  //        }
+  //      }
+  //      if (i === -1) {
+  //        i = 0;
+  //      }
+  //      $('.page-toc li a').removeClass('red');
+  //      $('.page-toc li').eq(i).children('a').addClass('red');
+  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
+  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
+  //    },200)
+  //   }
+
+  //   $('.content').on('scroll', dark);
+  // }
+</script>
+<style>
+
+    /* ::-webkit-scrollbar{width:14px;}
+    ::-webkit-scrollbar-track{background-color:transparent;}
+    ::-webkit-scrollbar-thumb{background-color:transparent;}
+    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
+    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
+
+    .page-toc > ul .red {
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #000
+    }
+
+
+
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css" tppabs="http://www.zhufengpeixun.cn/architecture/static/css/main.css">
+</head>
+<body>
+
+
+<div class="warpper">
+
+    <div class="page-toc">
+        <ul><li><a href="#t01. roadhog">1. roadhog</a></li><li><a href="#t12. package.json">2. package.json</a></li><li><a href="#t23. .webpackrc">3. .webpackrc</a></li><li><a href="#t34. .roadhogrc.mock.js">4. .roadhogrc.mock.js</a></li><li><a href="#t45.参考">5.参考</a></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h2 id="t01. roadhog">1. roadhog <a href="#t01. roadhog"> # </a></h2>
+<ul>
+<li>out of the box React application development tools, built-in css-modules, babel, postcss, HMR, etc.</li>
+<li>create-react-app experience</li>
+<li>webpack configuration in JSON format</li>
+<li>mock</li>
+<li>test based on jest, ui test with enzyme</li>
+</ul>
+<pre><code class="lang-js">## Install globally or locally 
+$ npm i roadhog -g
+
+## Check version 
+$ roadhog -v
+2.0.0
+
+## Local development 
+$ roadhog dev
+
+## Build 
+$ roadhog build
+$ NO_COMPRESS=1 roadhog build
+
+## Test 
+$ roadhog test
+</code></pre>
+<h2 id="t12. package.json">2. package.json <a href="#t12. package.json"> # </a></h2>
+<pre><code class="lang-json">&quot;scripts&quot;: {
+    &quot;start&quot;: &quot;roadhog dev&quot;,
+    &quot;build&quot;: &quot;roadhog build&quot;,
+    &quot;test&quot;: &quot;roadhog test&quot;
+  },
+</code></pre>
+<h2 id="t23. .webpackrc">3. .webpackrc <a href="#t23. .webpackrc"> # </a></h2>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;entry&quot;</span>:<span class="hljs-string">&quot;./src/index.js&quot;</span>,
+    <span class="hljs-string">&quot;html&quot;</span>: {
+        <span class="hljs-string">&quot;template&quot;</span>: <span class="hljs-string">&quot;./src/index.ejs&quot;</span>
+    }
+}
+</code></pre>
+<h2 id="t34. .roadhogrc.mock.js">4. .roadhogrc.mock.js <a href="#t34. .roadhogrc.mock.js"> # </a></h2>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-comment">// Support type as Object and Array</span>
+    <span class="hljs-string">&apos;GET /api/users&apos;</span>: { <span class="hljs-attr">users</span>: [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>] },
+
+    <span class="hljs-comment">// Method like GET or POST can be omitted</span>
+    <span class="hljs-string">&apos;GET /api/users/1&apos;</span>: { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span> },
+
+    <span class="hljs-comment">// Support for custom functions, the API is the same as <a href="../../cdn-cgi/l/email-protection.htm" tppabs="http://www.zhufengpeixun.cn/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dabfa2aaa8bfa9a99aee">[email&#160;protected]</a></span>
+    <span class="hljs-string">&apos;POST /api/users/create&apos;</span>: <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> { res.end(<span class="hljs-string">&apos;OK&apos;</span>); },
+  };
+</code></pre>
+<h2 id="t45.&#x53C2;&#x8003;">5.&#x53C2;&#x8003; <a href="#t45.&#x53C2;&#x8003;"> # </a></h2>
+<ul>
+<li><a href="javascript:if(confirm('https://www.npmjs.com/package/roadhog  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.npmjs.com/package/roadhog'" tppabs="https://www.npmjs.com/package/roadhog">roadhog</a></li>
+<li><a href="javascript:if(confirm('https://gitee.com/zhufengpeixun/zhufeng-roadhog  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://gitee.com/zhufengpeixun/zhufeng-roadhog'" tppabs="https://gitee.com/zhufengpeixun/zhufeng-roadhog">zhufeng-roadhog</a></li>
+</ul>
+
+        <div class="copyright">Powered by <a href="javascript:if(confirm('https://github.com/jaywcjlove/idoc  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://github.com/jaywcjlove/idoc'" tppabs="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="javascript:if(confirm('https://nodejs.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://nodejs.org/'" tppabs="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+    
+</div>
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" tppabs="http://www.zhufengpeixun.cn/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js" tppabs="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+  // if (!$('.understand-me').length) {
+  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+  //   var count = bar / 26 / 2;
+  //   var barHeight = $('.page-toc').outerHeight();
+  //   $('.page-toc li').eq(0).children('a').addClass('red');
+  //   var arr = [];
+  //   $("h1,h2,h3,h4,h5,h6").each(function () {
+  //     arr.push($(this).position().top);
+  //   });
+  //   var timer
+  //   function dark() {
+  //     clearTimeout(timer)
+  //      timer = setTimeout(function () {
+  //      var top = Math.abs($('.page-toc > ul').position().top);
+  //      var cur = $('.content').scrollTop();
+  //      for (var i = arr.length; i >= 0; i--) {
+  //        if (arr[i] <= cur) {
+  //          break;
+  //        }
+  //      }
+  //      if (i === -1) {
+  //        i = 0;
+  //      }
+  //      $('.page-toc li a').removeClass('red');
+  //      $('.page-toc li').eq(i).children('a').addClass('red');
+  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
+  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
+  //    },200)
+  //   }
+
+  //   $('.content').on('scroll', dark);
+  // }
+</script>
+<style>
+
+    /* ::-webkit-scrollbar{width:14px;}
+    ::-webkit-scrollbar-track{background-color:transparent;}
+    ::-webkit-scrollbar-thumb{background-color:transparent;}
+    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
+    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
+
+    .page-toc > ul .red {
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #000
+    }
+
+
+
+
+
+</style>
+</body>
+</html>
